@@ -2,8 +2,11 @@
 
 def rev(str,reverse=""):
 
+#	print (reverse)
+
+
 	if len(str) < 1:
-		return (str)
+		return (reverse)
 
 	else:
 		reverse=reverse+str[-1]
