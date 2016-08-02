@@ -5,6 +5,9 @@ def msort (arr):
 	l = arr[0:mid]
 	r = arr[mid:]
 	
+	if len(arr) <= 1:
+		return arr
+
 	if len(arr) > 1:
 		msort(l)
 		msort(r)
@@ -20,3 +23,5 @@ def msort (arr):
 			temp = l[i]
 			l[i] = r[j]
 			l[i] = temp
+		else:
+			temp = l
