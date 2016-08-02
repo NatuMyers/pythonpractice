@@ -1,0 +1,68 @@
+def binarySearch(lis, target):
+
+  found = False
+  first = 0
+  last = len(lis)-1
+  
+
+  while first<=last and not found:
+    midpoint = (first + last)//2
+    
+    if lis[midpoint] == target:
+      found = True
+      
+    else:
+    
+      if target < lis[midpoint]:
+        last = midpoint-1
+        else:
+          first = midpoint+1
+      return found
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+binSearch(lis,first,last,val):
+
+	first = 0
+	middle = len(lis)//2
+	last = len(lis)-1
+
+	if (middle == target):
+		print("found")
+	elif (target > middle):
+		binSearch(lis,middle+1,last,val)
+	else:
+		binSearch(lis,first,middle-1,val)
