@@ -1,0 +1,3 @@
+def mtxFinder(mtx):
+
+	for i in range(len(

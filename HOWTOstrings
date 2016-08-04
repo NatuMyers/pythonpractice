@@ -1,0 +1,25 @@
+#Slicing strings
+
+S = “32464553494”
+
+S[:-1] == 4
+
+-----
+
+ 
+
+a_string="abcd"
+for letter in a_string:
+    print letter
+returns
+
+a
+b
+c
+d
+
+
+-----
+
+
+string2 = string.split("},{")

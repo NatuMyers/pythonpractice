@@ -1,0 +1,16 @@
+
+def binSearch(lis,val):
+
+	if ( (len(lis)) <= 0):
+		print ("invalid")
+
+	elif (val == lis[0] and len(lis) == 1 ):
+		print ("it's here!")
+
+	elif (val >= lis[ ( len(lis)//2) ] ):
+		binSearch( lis[len(lis//2):(len(lis))] )
+	else: 
+		binSearch( lis[0:len(lis//2)])
+
+
+binSearch([1,2,5,6,7,9],7)
