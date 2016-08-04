@@ -1,0 +1,4 @@
+
+def twoSum(f,s):
+
+	

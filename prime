@@ -1,0 +1,20 @@
+
+#Use dynamic programming to find the first X prime numbers
+
+def prime(X):
+	
+	#base
+	if (X <= 1):
+		return 1
+
+	else: #beyond
+		i = 1 
+
+		while i < X:
+			if (X%i == 0 and i < X and i > 1):
+				print(X)
+			i+=1
+
+		return (prime(X-1))
+
+prime(5)
