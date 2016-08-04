@@ -6,7 +6,7 @@ S[:-1] == 4
 
 -----
 
-
+ 
 
 a_string="abcd"
 for letter in a_string:
